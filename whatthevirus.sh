@@ -1,5 +1,5 @@
 #!/bin/bash
-# Simple script to lunch antivirus tools
+# Simple script to launch antivirus tools
 
 # Include functions from other file
 source tools.sh
