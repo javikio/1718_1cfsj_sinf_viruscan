@@ -1,6 +1,6 @@
 # File that contains functions for antivirus launcher whatthevirus.sh
 # don not execute it directly
-
+#hello
 simple_menu () {
   echo "Please, write an option:"
   echo "1 .- Refresh virus database"
