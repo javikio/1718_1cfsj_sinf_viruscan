@@ -6,8 +6,10 @@ source tools.sh
 
 # Main body
 Action=$(simple_menu)
-case $Action
+
+case $Action in
   1 )
+    echo "3 .- Scan all"
     freshclam
     ;;
 
@@ -17,7 +19,7 @@ case $Action
     ;;
 
   * )
-    echo "sorry, wong option"
+    echo "sorry, wrong option"
     exit 1
     ;;
 
