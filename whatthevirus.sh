@@ -12,7 +12,7 @@ do
   case $Option in
     1 )
       echo "1 .- Install"
-      sudo apt-get install clamav
+      sudo apt-get install clamav clamav-daemon -y
       ;;
 
     2 )
