@@ -24,7 +24,7 @@ do
 
     2 )
       echo "2 .- Update database clamav"
-      sudo freshclam #> /dev/null 2> /dev/null
+      sudo freshclam > /dev/null 2> /dev/null
 
       if [ $? = 0 ]
         then
