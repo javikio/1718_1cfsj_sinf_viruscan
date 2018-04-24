@@ -24,13 +24,21 @@ do
 
     2 )
       echo "2 .- Update database clamav"
-      sudo freshclam
+      sudo freshclam > /dev/null 2> /dev/null
+
+      if [ $? = 0 ]
+        then
+          echo "Update correctly"
+        else
+          echo "Updated failed"
+      fi
       ;;
 
     3 )
-      echo "3 .- Scan directory, write one directory and press enter."
-      directory=$(provide_dir)
-      clamscan $directory
+      echo "3 .- Scan directory."
+      provide_dir
+      echo "scanning "$Dir"..."
+      clamscan /$Dir
       ;;
 
     4 )
@@ -40,6 +48,7 @@ do
 
     5 )
       echo "Exit"
+      clear
       exit 1
       ;;
 
